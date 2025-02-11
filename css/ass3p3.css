@@ -43,3 +43,63 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+*{
+font-size: 10px;
+}
+h1{
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2{
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+body{
+  line-height: 14px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+h2+p{
+  text-indent: 20px;
+}
+a:link{
+  color: #a66;
+  text-decoration: underline;
+  
+}
+a:visited{
+  color: rgb(109, 46, 46);
+  text-decoration: underline;
+}
+a:focus{
+  color: rgb(216, 175, 175);
+  text-decoration: none;
+  outline: 0;
+}
+a:hover{
+  color: rgb(186, 31, 31);
+  text-decoration: none;
+}
+:active{
+  font-style: italic;
+}
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+  background-size: 100%;
+  background-image: url("../images/external-link-52.png");
+}
+ol, ul{
+  line-height: 14px;
+  list-style: square;
+}
+nav{
+  width: 200px;
+  height: 410px;
+  background-color:#a66;
+  display: block;
+}
