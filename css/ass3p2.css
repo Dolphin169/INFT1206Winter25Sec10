@@ -5,7 +5,7 @@ html {
   /* Your CSS below here */
 div{
   width: 200px;
-  height: 200px;
+  line-height: 200px;
   margin:auto;
   text-align:center;
   font-size: 1.2em;
@@ -14,6 +14,6 @@ div{
   text-shadow: 2px 2px 2px black;
   border-radius: 3px;
   border: 1px solid orangered;
-  background-image: linear-gradient(to top left, black, orange 20%);
-  box-shadow: 5px 5px 5px black
+  background-image: linear-gradient(to top left, black, orange 100px);
+  box-shadow: 5px 5px 20px 7px black
 }
