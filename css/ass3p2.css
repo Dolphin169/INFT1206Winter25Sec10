@@ -8,12 +8,12 @@ div{
   line-height: 200px;
   margin:auto;
   text-align:center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   background-color: orange;
   color: aqua;
   text-shadow: 2px 2px 2px black;
   border-radius: 3px;
   border: 1px solid orangered;
-  background-image: linear-gradient(to top left, black, orange 100px);
+  background-image: linear-gradient(to bottom right, orange 30%, black);
   box-shadow: 5px 5px 20px 7px black
 }
