@@ -49,14 +49,35 @@ body {
   .feature {
       width: 200px;
   }
+  /*My CSS code*/
   nav ul{
     display: flex;
+    /*could use justify-content: space-between; but we did flex direction in class*/
     flex-direction: row;
   }
   nav ul li{
     flex: 1;
   }
+  nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
   article img{
     float: left;
-    margin-right:5px;
+    margin-right: 5px;
+  }
+  aside{
+    float: right;
+  }
+  .photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3px;
   }
