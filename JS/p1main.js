@@ -1,3 +1,7 @@
+// Name: Kevin Thomas
+// Date: 2025-03-10
+//Description: The JavaScript that makes the silly story
+
 console.log("Hello")
 
 const customName = document.getElementById('customname');
