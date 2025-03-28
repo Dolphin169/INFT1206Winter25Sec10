@@ -1,3 +1,9 @@
+// Name: Kevin Thoams
+// file name: p4main.js
+// Date: 2025-03-28
+// javascript code that allows for a evil circle ball eating program to run
+// by making balls and an evil cricle and letting it move
+
 // set up canvas
 
 const paragraph = document.querySelector("p")
