@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validate(){
+            let fname = document.querySelector('#fname').value.trim();
+            let lname = document.querySelector('#lname').value.trim();
+            if (fname.length == 0){
+                //alert("You must enter value for FIrst Name")
+                document.querySelector('#fname-error').textContent = "Please enter a first name"
+                return false;
+            }
+            else if(fname.length<5){
+                //alert("You must enter value for  longer than 5 characters for FIrst Name")
+                document.querySelector('#fname-error').textContent = "Please enter a first name longer than 5 characters"
+                return false;
+            }
+            if (lname.length == 0){
+                //alert("You must enter value for Last Name")
+                document.querySelector('#lname-error').textContent = "Please enter a last name"
+                return false;
+            }
+            else if(lname.length<5){
+                //alert("You must enter value longer than 5 characters for Last Name")
+                document.querySelector('#lname-error').textContent = "Please enter a last name longer than 5 characters"
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <title>Week 12</title>
+</head>
+<body>
+    <h1>Week 12: Intro to forms</h1>
+    <form action="#" method="get" onsubmit="return validate()">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" title="First Name">
+            <span id="fname-error"></span>
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <span id="lname-error"></span>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="assignment">Upload your assignment</label>
+            <input type="file" name="assignment" id="assignment">
+        </div>
+        <div>
+            <p>What are your hobbies and interests?</p>
+            <input type="checkbox" id="interest1" name="interest" value="sports" checked>
+            <label for="interest1">Sports</label>
+            <input type="checkbox" name="interest" id="interest2" value="Musics">
+            <label for="interest2">Musics</label>
+        </div>
+        <div>
+            <p>Which OS do you prefer?</p>
+            <input type="radio" name="os" id="os1" value="windows">
+            <label for="os1">Windows</label>
+            <input type="radio" name="os" id="os2" value="linux" checked>
+            <label for="os2">Linux</label>
+        </div>
+        <div>
+            <label for="cpurse">What is your current course?</label>
+            <input type="text" name="course" id="course" list="list1">
+            <datalist id="list1">
+                <option value="inft1206">INFT1206</option>
+                <option value="inft2100">INFT2100</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="">What do you want to do this weekend?</label>
+            <select name="weekend" id="weekend" size="1">
+                <option value="coffee">Drink Coffee</option>
+                <option value="run">Running</option>
+                <option value="read">Reading</option>
+                <option value="swim">Swimming</option>
+            </select>
+        </div>
+        <input type="hidden" name="secret" value="Hello">
+        <div>
+            <label for="">What do you think about this course so far</label><br>
+            <textarea name="" id="" rows="6" cols="20"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Go">
+            <input type="reset" value="Reset">
+            <input type="button" value="Calculate">
+        </div>
+    </form>
+</body>
+</html>
