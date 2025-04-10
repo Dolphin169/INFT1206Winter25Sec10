@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
 
@@ -49,19 +49,20 @@
         <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
         
         <table>
+          <caption>Facts about Wild and Urban bears</caption>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <th scope="col">Bear Type</th>
+              <th scope="col">Coat</th>
+              <th scope="col">Adult size</th>
+              <th scope="col">Habitat</th>
+              <th scope="col">Lifespan</th>
+              <th scope="col">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <th scope="row">Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -69,7 +70,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <th scope="row">Urban</th>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -98,11 +99,16 @@
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
 
         <audio controls>
-          <source src="../media/bear.mp3" type="audio/mp3" alt="Link to mp3 for older browsers: https://dolphin169.github.io/INFT1206Winter25Sec10/media/bear.mp3 This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.">
-          <source src="../media/bear.ogg" type="audio/ogg" alt="Link to ogg for older browsers: https://dolphin169.github.io/INFT1206Winter25Sec10/media/bear.ogg This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.">
-          <p>It looks like your browser doesn't support HTML5 audio players.</p>
-        </audio>
+          <source src="../media/bear.mp3" type="audio/mp3" alt="This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.">
+          <source src="../media/bear.ogg" type="audio/ogg" alt="This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.">
+          <p>It looks like your browser doesn't support HTML5 audio players.
+            Here is a <a href="https://dolphin169.github.io/INFT1206Winter25Sec10/media/bear.mp3" alt>Link</a> to mp3.
+            Here is a <a href="https://dolphin169.github.io/INFT1206Winter25Sec10/media/bear.ogg">Link</a> to ogg.
+          </p>
 
+        </audio>
+        <input type="button" value="Transcript">
+        <label for="button" style="font-size: 1.6rem;">This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.</label>
         <aside>
 
           <h3>About the author</h3>
@@ -113,21 +119,21 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <button class="show-hide">Show comments</button>
 
           <div class="comment-wrapper">
 
             <h2>Add comment</h2>
 
             <form class="comment-form">
-              <div class="flex-pair">
+              <label class="flex-pair" for="name">
                 Your name:
                 <input type="text" name="name" id="name" placeholder="Enter your name">
-              </div>
-              <div class="flex-pair">
+              </label>
+              <label class="flex-pair" for="comment">
                 Your comment:
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
-              </div>
+              </label>
               <div>
                 <input type="submit" value="Submit comment">
               </div>
