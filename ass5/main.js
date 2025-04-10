@@ -45,16 +45,3 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
-
-let button = document.querySelector("input").value;
-let label = document.querySelector("label").textContent;
-
-button.addEventListener("click", showLabel);
-
-function showLabel(){
-    if(label === "" && button === "Transcript"){
-      label.textContent = "This isn't really an audio fact file about bears, but it is an audio file that you can transcribe."
-    } else {
-      label.textContent = ""
-    }
-}
